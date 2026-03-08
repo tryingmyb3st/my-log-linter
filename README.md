@@ -78,6 +78,9 @@ make build
 
 ./bin/mylinter cmd/example/example.go 
 
+```
+
+```console
 C:\Users\User\my-log-linter\cmd\example\example.go:19:14: first letter should be in lowercase
 C:\Users\User\my-log-linter\cmd\example\example.go:20:13: first letter should be in lowercase
 C:\Users\User\my-log-linter\cmd\example\example.go:27:14: all logs should be in english
@@ -88,10 +91,14 @@ C:\Users\User\my-log-linter\cmd\example\example.go:37:12: logs shouldn't contain
 C:\Users\User\my-log-linter\cmd\example\example.go:45:14: logs shouldn't contain credentials
 C:\Users\User\my-log-linter\cmd\example\example.go:46:15: logs shouldn't contain credentials
 C:\Users\User\my-log-linter\cmd\example\example.go:47:12: logs shouldn't contain credentials
+```
 
+```console
 cd golangci-lint/ && make build && cd ../
 ./golangci-lint/golangci-lint.exe run cmd/example/example.go
+```
 
+```console
 example.go:19:14: myLogLinter: first letter should be in lowercase (myLinter)
         logger.Info("Starting server on port 8080") // want "first letter should be in lowercase"
                     ^
