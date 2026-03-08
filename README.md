@@ -94,8 +94,8 @@ C:\Users\User\my-log-linter\cmd\example\example.go:47:12: logs shouldn't contain
 ```
 
 ```console
-cd golangci-lint/ && make build && cd ../
-./golangci-lint/golangci-lint.exe run cmd/example/example.go
+cd golangci-lint-with-mylinter/ && make build && cd ../
+./golangci-lint-with-mylinter/golangci-lint.exe run cmd/example/example.go
 ```
 
 ```console
